@@ -5,10 +5,61 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="normalize.css"/>
+  <link rel="stylesheet" href="dist/spectre.css">
+  <link rel="stylesheet" href="dist/spectre-exp.min.css">
+  <link rel="stylesheet" href="dist/spectre-icons.min.css">
   <title>Banana Coin</title>
 </head>
+
 <body>
-  <h1>Banana Coin</h1>
+  <h1 id="navbarTitle">Banana Coin</h1>
+
+  <!-- NAV BAR -->
+  <ul class="nav">
+    <li class="nav-item">
+      <a href="#">Elements</a>
+    </li>
+    <li class="nav-item active"> <!--add the active class to give it the highlight-->
+      <a href="#">Layout</a>
+      <!-- INNER LIST
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="#">Flexbox grid</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Responsive</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Navbar</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Empty states</a>
+        </li>
+      </ul> -->
+    </li>
+    <li class="nav-item">
+      <a href="#">Components</a>
+    </li>
+    <li class="nav-item">
+      <a href="#">Utilities</a>
+    </li>
+  </ul>
+  <!-- END NAV BAR -->
+
+  <!-- MAIN CONTENT -->
+  <div class="contentBody">
+    <div class="container">
+      <div class="columns">
+        <div class="column col-12" id="test">test</div>
+        <div class="column col-12" id="test">test</div>
+        <div class="column col-6" id="test">test</div>
+        <div class="column col-6" id="test">test</div>
+        <div class="column col-4" id="test">test</div>
+        <div class="column col-2" id="test">test</div>
+      </div>
+    </div>
+  </div>
 </body>
 
 <script src='script.js'></script>
