@@ -30,6 +30,8 @@ https://www.reddit.com/r/webdev/comments/8iwx8i/what_is_your_typical_css_boilerp
 
 body {
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
 }
 
 /**
