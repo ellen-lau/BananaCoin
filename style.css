@@ -1,8 +1,32 @@
-.contentBody {
-  margin-left: 10vw;
-  margin-right: 20vw;
+h1 {
+  font-family: Nunito;
+  font-weight: bolder;
 }
 
-#test {
-  text-align: center;
+p {
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+
+.contentBody {
+  margin-left: 25vw;
+  margin-right: 40vw;
+}
+
+/* CLASS CSS */
+.credit-card-textbox {
+  border: dashed 1px #38D228;
+  border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
+  padding: 1.5rem;
+}
+
+.narrator-textbox {
+
+}
+
+/* IMAGE CSS */
+#img-jerry {
+  width: 100%;
+  height: auto;
 }
