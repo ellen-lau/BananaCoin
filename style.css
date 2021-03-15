@@ -17,7 +17,7 @@ h2 {
 
 p {
   font-family: Roboto;
-  font-weight: 400;
+  font-weight: 300;
   text-align: left;
 }
 
@@ -27,7 +27,7 @@ b {
 
 span {
   font-family: Roboto;
-  font-weight: 400;
+  font-weight: 300;
   text-align: left;
 }
 
@@ -91,12 +91,12 @@ span {
   color: white;
   z-index: 1;
   font-family: Roboto;
-  font-weight: 100;
+  font-weight: 300;
 
   border-radius: 0.2rem;
-  padding: 0.2rem;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
+  padding: 0.1rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
 }
 
 .term-highlight:hover + .term-definition {
