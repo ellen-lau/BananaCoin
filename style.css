@@ -16,6 +16,10 @@ p {
   text-align: left;
 }
 
+b {
+  color: #000000
+}
+
 
 .contentBody {
   margin-left: 25vw;
@@ -33,6 +37,9 @@ p {
   margin-top: 5vh;
 }
 
+.summary-row {
+  margin-top: 10vh;
+}
 /* CLASS CSS */
 .credit-card-textbox {
   border: dashed 2px #38D228;
@@ -64,6 +71,21 @@ p {
   justify-content: flex-start;
 }
 
+.text-left {
+
+  height: 80%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.image-map {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 /* IMAGE CSS */
 
 #img-jerry {
@@ -84,6 +106,28 @@ p {
   width: 90%;
 }
 
+#img-jerry-apply {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  height: auto;
+  width: 100%;
+}
+
+#gif-jerry-cc {
+  position: absolute;
+
+  height: auto;
+  width: 75%;
+
+  z-index: -5;
+
+  bottom: 10vh;
+  left: 6.5vw;
+
+}
+
 #gif-cashback {
   height: auto;
   width: 100%;
@@ -94,6 +138,10 @@ p {
   width: 100%;
 }
 
+#gif-fraud {
+  height: auto;
+  width: 85%;
+}
 
 .crop-to-fit {
   display: flex;
