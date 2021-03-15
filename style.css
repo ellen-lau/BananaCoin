@@ -1,32 +1,104 @@
 h1 {
   font-family: Nunito;
   font-weight: bolder;
+  color: #000000;
+}
+
+h4 {
+  font-family: Nunito;
+  font-weight: bolder;
+  color: #000000;
 }
 
 p {
   font-family: Roboto;
   font-weight: 400;
+  text-align: left;
 }
 
 
 .contentBody {
   margin-left: 25vw;
-  margin-right: 40vw;
+  margin-right: 30vw;
+}
+
+/* NAVBAR CSS */
+#navbarTitle {
+  margin: 1rem 5rem 1rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* ROW CSS */
+.rewards-row {
+  margin-top: 5vh;
 }
 
 /* CLASS CSS */
 .credit-card-textbox {
-  border: dashed 1px #38D228;
+  border: dashed 2px #38D228;
   border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
   padding: 1.5rem;
 }
 
 .narrator-textbox {
+  background-color: #333333;
+  color: white;
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-size: 0.8rem;
+  z-index: 1;
 
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.narrator-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 /* IMAGE CSS */
+
 #img-jerry {
-  width: 100%;
   height: auto;
+  width: 275%;
+
+  z-index: -1;
+}
+
+#img-why-creditcard {
+  justify-content: center;
+  height: auto;
+  width:85%;
+}
+
+#img-house {
+  height: auto;
+  width: 90%;
+}
+
+#gif-cashback {
+  height: auto;
+  width: 100%;
+}
+
+#gif-perks {
+  height: auto;
+  width: 100%;
+}
+
+
+.crop-to-fit {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  height: 90%;
 }
