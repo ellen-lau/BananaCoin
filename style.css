@@ -168,14 +168,13 @@ span {
   margin: auto;
   margin-top: -1.5rem;
   width: 25rem;
-  height: 25rem;
+  height: auto;
   border-radius: 1rem;
 
-  z-index: 1;
+  z-index: 50;
 }
 
 .quizContents {
-  position: relative;
   background-color: white;
   color: black;
   margin: auto;
@@ -187,6 +186,89 @@ span {
   font-weight: 400;
   font-size: 14px;
   text-align: left;
+}
+
+.quizAnswer {
+  transition-duration: 0.1s;
+  display: block;
+  position: relative;
+  background-color: white;
+  color: black;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  width: inherit;
+  outline: 0 none;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+
+  padding: 0.7rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+}
+
+.quizAnswer:hover{
+  display: block;
+  position: relative;
+  background-color: #333333;
+  color: white;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  width: inherit;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+
+  padding: 0.7rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+
+}
+
+.quizSubmitDisabled {
+  display: block;
+  position: relative;
+  background-color: #b8b8b8;
+  color: white;
+  z-index: 0;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+  margin: auto;
+
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+
+  text-align: center;
+}
+
+.quizSubmit {
+  display: block;
+  position: relative;
+  background-color: #333333;
+  color: white;
+  z-index: 0;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+  margin: auto;
+
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+
+  text-align: center;
 }
 /* IMAGE CSS */
 
