@@ -61,6 +61,7 @@ function answerButtonFocus(id) {
       otherAnswers[i].classList.remove("quizAnswerSelect")
       otherAnswers[i].classList.add("quizAnswer")
     }
+    enableQuizSubmit(id)
   }
 
   //if not first time
@@ -83,8 +84,10 @@ function answerButtonFocus(id) {
 function enableQuizSubmit(id) {
   const submit = document.getElementById(id).parentElement.getElementsByClassName("quizSubmitDisabled")[0];
   submit.disabled = false;
-  submit.style.backgroundColor = "black";
-  submit.style.color = "white";
+  submit.classList.add("quizSubmit")
+  submit.classList.remove("quizSubmitDisabled")
+  // submit.style.backgroundColor = "black";
+  // submit.style.color = "white";
 }
 
 //style focus on answer when clicked

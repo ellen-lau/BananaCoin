@@ -309,7 +309,7 @@ a {
 .quizSubmit:hover {
   display: block;
   position: relative;
-  background: #333333;
+  background: black;
   color: white;
   z-index: 0;
   font-family: Roboto;
