@@ -48,18 +48,30 @@ document.getElementById('q2-submit').addEventListener("click", submitAnswer)
 document.getElementById('q3-submit').addEventListener("click", submitAnswer)
 
 
-
-
-
-
 //focus on answer when clicked
-answerButtonFocus = function getFocus(id) {
+function answerButtonFocus(id) {
   const quiz = document.getElementById(id).parentElement.id;
   const answer = document.getElementById(id);
   const otherAnswers = answer.parentElement.getElementsByClassName("quizAnswer");
+  const selectedAnswer = answer.parentElement.getElementsByClassName("quizAnswerSelect");
 
-  for (var i = 0; i < 3; i++) {
-    unfocusAnswer(otherAnswers[i])
+  //if first time clicking button
+  if (selectedAnswer.length == 0) {
+    for (var i = 0; i < 3; i++) {
+      otherAnswers[i].classList.remove("quizAnswerSelect")
+      otherAnswers[i].classList.add("quizAnswer")
+    }
+  }
+
+  //if not first time
+  else {
+    for (var i = 0; i < 2; i++) {
+      otherAnswers[i].classList.remove("quizAnswerSelect")
+      otherAnswers[i].classList.add("quizAnswer")
+    }
+    selectedAnswer[0].classList.add("quizAnswer")
+    selectedAnswer[0].classList.remove("quizAnswerSelect")
+
   }
 
   focusAnswer(answer);
@@ -71,21 +83,15 @@ answerButtonFocus = function getFocus(id) {
 function enableQuizSubmit(id) {
   const submit = document.getElementById(id).parentElement.getElementsByClassName("quizSubmitDisabled")[0];
   submit.disabled = false;
-  submit.style.backgroundColor = "#333333";
+  submit.style.backgroundColor = "black";
   submit.style.color = "white";
 }
 
 //style focus on answer when clicked
 function focusAnswer(button) {
-  button.style.backgroundColor = "#333333";
-  button.style.color = "white";
-}
-
-//unfocus other answers
-function unfocusAnswer(button) {
-  button.style.transitionDuration = "0.1s";
-  button.style.backgroundColor = "white";
-  button.style.color = "black";
+  //make selected button have no hover
+  button.classList.remove("quizAnswer")
+  button.classList.add("quizAnswerSelect")
 }
 
 //submit answer
@@ -97,11 +103,7 @@ function submitAnswer(e) {
   let isRight = false;
 
   if (currentAnswer === correctAnswer) {
-    console.log("true")
     isRight = true;
-  }
-  else {
-    console.log("false")
   }
 
   displayQuizResponse(quiz, isRight);
@@ -113,25 +115,7 @@ function displayQuizResponse(quiz, isRight) {
   const quizContent = document.getElementById(quiz);
   const div = document.createElement("div");
 
-  div.style.display = "block";
-  div.style.position = "relative";
-  div.style.backgroundColor = "#333333";
-  div.style.color = "white";
-  div.style.margin = "auto";
-  div.style.border = "1px solid black";
-  div.style.borderRadius = "0.3rem";
-  div.style.width = "inherit";
-  div.style.outline = "0 none";
-
-  div.style.fontFamily = "Roboto";
-  div.style.fontWeight =  "400";
-  div.style.fontSize = "14px";
-  div.style.textAlign = "left";
-
-  div.style.padding = "0.7rem";
-  div.style.paddingLeft = "1.3rem";
-  div.style.paddingRight = "1.3rem";
-
+  div.classList.add("quizAnswerSelect")
   div.style.boxShadow = "0 0 1.3rem #38D228";
 
   div.innerHTML = quizAnswersText.get(quizCorrectAnswersId.get(quiz))

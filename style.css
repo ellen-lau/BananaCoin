@@ -31,6 +31,9 @@ span {
   text-align: left;
 }
 
+a {
+  color: #000000
+}
 
 .contentBody {
   margin-left: 25vw;
@@ -38,10 +41,41 @@ span {
 }
 
 /* NAVBAR CSS */
+
+.navbar {
+  margin: -0.2rem 0 0 0;
+  position: fixed;
+  background-color: white;
+  z-index: 1000;
+  width: 100%;
+}
+
 #navbarTitle {
   margin: 1rem 5rem 1rem 1rem;
   font-size: 0.9rem;
+  margin-right: 14rem;
 }
+
+.navbar-center {
+  margin: 0 0 0 0;
+  background-color: white;
+  width: 100%;
+}
+
+.btn {
+  font-family: Roboto;
+  font-weight: 400;
+  text-align: left;
+  color: #000000;
+  padding-left: 3rem;
+}
+
+.navbar-link-select-bubble{
+  background-color: #38D228;
+  border-radius: 3rem;
+  border: 1px solid green;
+}
+
 
 /* ROW CSS */
 .rewards-row {
@@ -141,6 +175,8 @@ span {
   left: 0;
 }
 
+/* QUIZ CSS */
+
 .quizHeader {
   position: relative;
   display: block;
@@ -170,7 +206,6 @@ span {
   width: 25rem;
   height: auto;
   border-radius: 1rem;
-
   z-index: 50;
 }
 
@@ -213,10 +248,10 @@ span {
 .quizAnswer:hover{
   display: block;
   position: relative;
-  background-color: #333333;
+  background: #333333;
   color: white;
   margin: auto;
-  border: 1px solid black;
+  border: 1.4px solid black;
   border-radius: 0.3rem;
   width: inherit;
 
@@ -231,10 +266,50 @@ span {
 
 }
 
+.quizAnswerSelect {
+  display: block;
+  position: relative;
+  background-color: black;
+  color: white;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 0.3rem;
+  width: inherit;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+
+  padding: 0.7rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+}
+
 .quizSubmitDisabled {
   display: block;
   position: relative;
   background-color: #b8b8b8;
+  color: white;
+  z-index: 0;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+  margin: auto;
+
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+
+  text-align: center;
+}
+
+.quizSubmit:hover {
+  display: block;
+  position: relative;
+  background: #333333;
   color: white;
   z-index: 0;
   font-family: Roboto;
@@ -270,6 +345,7 @@ span {
 
   text-align: center;
 }
+
 /* IMAGE CSS */
 
 #img-jerry {
