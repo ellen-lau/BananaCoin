@@ -224,14 +224,14 @@ a {
 }
 
 .quizAnswer {
-  transition-duration: 0.1s;
+  transition-duration: 0.15s;
   display: block;
   position: relative;
   background-color: white;
   color: black;
   margin: auto;
   border: 1px solid black;
-  border-radius: 0.3rem;
+  border-radius: 0.4rem;
   width: inherit;
   outline: 0 none;
 
@@ -248,11 +248,11 @@ a {
 .quizAnswer:hover{
   display: block;
   position: relative;
-  background: #333333;
+  background: #333333 radial-gradient(circle, transparent 100%, #bbbbbb 1%);
   color: white;
   margin: auto;
   border: 1.4px solid black;
-  border-radius: 0.3rem;
+  border-radius: 0.4rem;
   width: inherit;
 
   font-family: Roboto;
@@ -272,8 +272,8 @@ a {
   background-color: black;
   color: white;
   margin: auto;
-  border: 2px solid black;
-  border-radius: 0.3rem;
+  border: 1.5px solid black;
+  border-radius: 0.4rem;
   width: inherit;
 
   font-family: Roboto;
@@ -309,7 +309,7 @@ a {
 .quizSubmit:hover {
   display: block;
   position: relative;
-  background: black;
+  background: black radial-gradient(circle, transparent 100%, #000000 1%);
   color: white;
   z-index: 0;
   font-family: Roboto;
@@ -327,6 +327,7 @@ a {
 }
 
 .quizSubmit {
+  transition-duration: 0.4s;
   display: block;
   position: relative;
   background-color: #333333;
