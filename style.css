@@ -121,6 +121,8 @@ a {
 
 
 .term-highlight {
+  position: relative;
+
   background-color: #333333;
   color: white;
   z-index: 1;
@@ -133,20 +135,28 @@ a {
   padding-right: 0.4rem;
 }
 
-.term-highlight:hover + .term-definition {
-  background-color: green;
-  z-index: 1;
-  font-family: Roboto;
-  font-weight: 100;
-  border-radius: 1rem;
-  border: 1px solid green;
-}
-
+/* HARDCODED: TERM DEFINITION WIDTH IS HARDCODED */
 .term-definition {
-  display: block;
+  position: absolute;
+  top: 1.5rem;
+  left: 0%;
+  width: 20rem;
+  transition: all 1s ease-in;
+
   display: none;
+  z-index: 10;
+  font-family: Roboto;
+  font-weight: 400;
+  border-radius: 1rem;
+  border: 2px solid #38D228;
+  color: black;
+  background-color: white;
+  padding: 1rem;
 }
 
+.term-definition-header {
+  font-weight: bolder;
+}
 
 .narrator-left {
   display: flex;
