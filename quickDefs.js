@@ -4,11 +4,10 @@ tooltips.forEach(function(tooltip) {
   const tooltipSpan = tooltip.querySelector('.term-definition')
 
   tooltip.onmouseenter = function(e) {
-    tooltipSpan.style.transition = 'all 1s ease-in'
-    tooltipSpan.style.display = 'block'
+    tooltipSpan.style.opacity = 1
   }
 
   tooltip.onmouseleave = function(e) {
-    tooltipSpan.style.display = 'none'
+    tooltipSpan.style.opacity = 0
   }
 })
