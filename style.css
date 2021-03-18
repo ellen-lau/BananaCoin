@@ -119,6 +119,9 @@ a {
   padding-bottom: 3rem;
 }
 
+.term-tooltip {
+  position: relative;
+}
 
 .term-highlight {
   position: relative;
