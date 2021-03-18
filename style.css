@@ -38,6 +38,8 @@ a {
 .contentBody {
   margin-left: 25vw;
   margin-right: 30vw;
+
+  cursor: default;
 }
 
 /* NAVBAR CSS */
@@ -147,6 +149,7 @@ a {
   transition: all 200ms ease-in;
 
   display: block;
+  visibility: hidden;
   opacity: 0;
   z-index: 10;
   font-family: Roboto;

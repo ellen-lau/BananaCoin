@@ -9,10 +9,12 @@ tooltips.forEach(function(tooltip) {
   const tooltipSpan = tooltip.querySelector('.term-definition')
 
   tooltipDef.onmouseenter = function(e) {
+    tooltipSpan.style.visibility = 'visible'
     tooltipSpan.style.opacity = 1
   }
 
   tooltipDef.onmouseleave = function(e) {
+    tooltipSpan.style.visibility = 'hidden'
     tooltipSpan.style.opacity = 0
   }
 
