@@ -23,10 +23,8 @@
 </head>
 
 <body>
-
-
   <!-- HEADER BAR -->
-  <header class="navbar">
+  <div class="navbar">
     <section class="navbar-center">
       <h1 id="navbarTitle">Banana Coin</h1>
       <a href="index.html" class="btn btn-link">Investing</a>
@@ -37,16 +35,16 @@
       <a href="index.html" class="btn btn-link">Spending</a>
       <a href="index.html" class="btn btn-link">Budgeting</a>
     </section>
-  </header>
+  </div>
   <!-- END OF HEADER BAR -->
 
   <!-- NAV BAR -->
-  <ul class="nav">
+  <ul class="nav sidebar">
     <li class="nav-item">
-      <a href="#">Elements</a>
+      <a href="#intro-section">Intro</a>
     </li>
     <li class="nav-item active"> <!--add the active class to give it the highlight-->
-      <a href="#">Layout</a>
+      <a href="#why-section">Why use a credit card?</a>
       <!-- INNER LIST
       <ul class="nav">
         <li class="nav-item">
@@ -64,10 +62,10 @@
       </ul> -->
     </li>
     <li class="nav-item">
-      <a href="#">Components</a>
+      <a href="#using-section">Using your credit card</a>
     </li>
     <li class="nav-item">
-      <a href="#">Utilities</a>
+      <a href="#paying-off-section">Paying off your credit card</a>
     </li>
   </ul>
   <!-- END NAV BAR -->
@@ -77,6 +75,9 @@
     <div class="container">
 
       <!-- INTRO SECTION -->
+      <div class='columns'>
+        <div class='column anchor_div col-12'><a id="intro-section"></a></div>
+      </div>
 
       <div class="columns intro-section">
         <div class="column col-12 credit-card-header">
@@ -91,7 +92,7 @@
 
       <div class="columns col-gapless">
         <div class="column col-8 narrator-left">
-          <p class="narrator-textbox">WE’LL LEARN ABOUT CREDIT CARDS WITH JERRY. <br><br>
+          <p class="narrator-textbox-2">WE’LL LEARN ABOUT CREDIT CARDS WITH JERRY. <br><br>
 
             THIS IS JERRY. JERRY IS A FRESHMAN STUDYING BUSINESS AT THE UNIVERSITY OF TORONTO. JERRY WORKS PART TIME AT STARBUCKS AS A BARISTA. <br><br>
 
@@ -114,9 +115,13 @@
 
       <!-- WHY USE A CREDIT CARD SECTION -->
 
+      <div class='columns'>
+        <div class='column anchor_div col-12'><a id="why-section"></a></div>
+      </div>
+
       <div class="columns why-section">
         <div class="column col-12 credit-card-header">
-          <h1> Why use a credit card? </h1>
+          <h1> Why use a credit card?</h1>
         </div>
       </div>
 
@@ -293,8 +298,11 @@
 
       <!-- START USING A CREDIT CARD -->
 
-      <div class="columns">
+      <div class='columns'>
+        <div class='column anchor_div col-12'><a id="using-section"></a></div>
+      </div>
 
+      <div class="columns using-section">
         <div class="column col-12">
           <h1 id="usingYourCreditCardTitle">Using Your Credit Card</h1>
         </div>
@@ -497,7 +505,11 @@
 
       <!-- START PAYING OFF YOUR CREDIT CARD -->
 
-      <div class="columns">
+      <div class='columns'>
+        <div class='column anchor_div col-12'><a id="paying-off-section"></a></div>
+      </div>
+
+      <div class="columns paying-off-section">
 
         <div class="column col-12">
           <h1 id="usingYourCreditCardTitle">Paying off your credit card</h1>
