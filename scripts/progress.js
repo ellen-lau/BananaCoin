@@ -13,7 +13,12 @@ progressBar.setAttribute("max", height)
 progressBar.setAttribute("value", $(window).scrollTop())
 
 const progressUpdateOnScroll = () => {
-  progressBar.setAttribute("value", $(window).scrollTop())
+  // HARDCODED: if near the bottom, set it to 100%
+  if ($(window).scrollTop() >= height*0.9) {
+    progressBar.setAttribute("value", height)
+  } else {
+    progressBar.setAttribute("value", $(window).scrollTop())
+  }
 }
 
 $(function () {
