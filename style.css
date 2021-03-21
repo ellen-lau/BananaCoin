@@ -54,7 +54,6 @@ a {
 .anchor_div {
   display: block;
   margin-bottom: 5rem;
-  scroll-behavior: smooth;
 }
 
 /* SIDEBAR CSS */
@@ -103,11 +102,6 @@ a {
   border: 1px solid green;
 }
 
-/* ANCHOR CSS */
-
-.anchor_div {
-  scroll-behavior: smooth;
-}
 /* ROW CSS */
 .rewards-row {
   margin-top: 5vh;

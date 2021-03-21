@@ -21,5 +21,3 @@ tooltips.forEach(function(tooltip) {
   i = i + 1
 
 })
-
-console.log(termDefs)
