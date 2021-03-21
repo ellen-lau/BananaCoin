@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-y: auto;
   height: 100%;
@@ -50,6 +54,7 @@ a {
 .anchor_div {
   display: block;
   margin-bottom: 5rem;
+  scroll-behavior: smooth;
 }
 
 /* SIDEBAR CSS */
@@ -98,7 +103,11 @@ a {
   border: 1px solid green;
 }
 
+/* ANCHOR CSS */
 
+.anchor_div {
+  scroll-behavior: smooth;
+}
 /* ROW CSS */
 .rewards-row {
   margin-top: 5vh;
@@ -178,7 +187,7 @@ a {
   border: 2px solid #38D228;
   color: black;
   background-color: white;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .term-definition-header {
