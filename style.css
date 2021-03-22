@@ -420,7 +420,7 @@ a {
 
 .nunitoP {
   display: inline-block;
-  max-width: 65%;
+  max-width: 60%;
   font-family: Nunito !important;
   font-size: 14px !important;
   font-weight: extra-light !important;
@@ -463,6 +463,7 @@ a {
 
 .balanceDiv {
   margin-bottom: 0.5rem;
+  position: relative;
 }
 
 .balanceDivInterest {
@@ -471,10 +472,12 @@ a {
 }
 
 .amounts {
+  display: inline-block;
   float: right;
   font-weight:bold;
   font-size: 25px !important;
   margin: auto; 
+  vertical-align: middle;
 }
 
 
