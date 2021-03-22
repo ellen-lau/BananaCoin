@@ -112,17 +112,25 @@ a {
 }
 
 .btn {
+
   font-family: Roboto;
   font-weight: 400;
   text-align: left;
   color: #000000 !important;
-  padding-left: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-right: 2rem;
+}
+
+.linkSelected {
+  background-color: #38D228 !important;
+  border-radius: 3rem;
+  color: white !important;
+
 }
 
 .navbar-link-select-bubble{
-  background-color: #38D228;
-  border-radius: 3rem;
-  border: 1px solid green;
+
 }
 
 /* ROW CSS */
