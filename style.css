@@ -501,6 +501,7 @@ a {
   border-radius: 0.3rem;
   text-align: center;
   margin-bottom: 0.5rem;
+  cursor: pointer;
 }
 
 .paymentButtonFocused {
@@ -602,6 +603,119 @@ a {
   width: 93%
 }
 
+/* CHECK STATEMENT BALANCE CSS*/
+
+.ccStatementSquare {
+  border-radius: 0.4rem;
+  border: 2.5px solid black;
+  width: 120%
+}
+
+.ccStatementSquareContent {
+  margin: 0.8rem;
+}
+
+.ccStatementDate {
+  font-family: Schoolbell !important;
+  font-size: 14px !important;
+  color: black;
+}
+
+.borderlineCCSquare {
+  border: 0.5px solid black;
+  width: 100%
+}
+
+.leftCCTransactionsSquare {
+  vertical-align:top;
+  display: inline-block;
+  margin-right: 3rem;
+  width: 6rem;
+}
+
+.middleCCTransactionsSquare {
+  vertical-align:top;
+  display: inline-block;
+  margin-right: 3rem;
+  width: 3.6rem;
+}
+
+.rightCCSquare {
+  display: inline-block;
+  width: 3.6rem; 
+}
+
+.report {
+  display: none;
+}
+
+
+.trasactionContent {
+  margin: 0.5rem;
+  margin-bottom: auto;
+}
+
+.ccTransaction {
+  border-radius: 0.2rem;
+  padding-left: 0.5rem;
+  margin-left: auto;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  margin-top: 0.2rem;
+}
+
+.ccTransaction:hover{
+  background-color: #F1F1F1;
+}
+
+.ccTransaction:hover .report{
+  display: inline-block;
+  background-color: #FFBEBE;
+  color: red;
+  font-size: 14px !important;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+
+}
+
+.errorsFoundDiv {
+  margin-bottom: 1rem;
+  width: 97%;
+}
+
+.errorsFoundCaption {
+  display: inline-block;
+  font-family: Schoolbell !important;
+  font-size: 18px;
+  margin-top: 0.2rem;
+}
+
+.errorsFoundNum {
+  display: inline-block;
+  float: right;  
+  font-family: Schoolbell !important;
+  font-size: 25px;
+}
+
+.reportTransactionInfoBox {
+  width:97%;
+  border-radius: 0.4rem;
+  background-color: #66C646;
+  color: black;
+  font-family: Schoolbell;
+  border: 2px solid black;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.ccStatementInfoSquareRows {
+  margin-bottom: 0.2rem;
+}
 
 /* IMAGE CSS */
 
@@ -726,4 +840,11 @@ a {
 #billing-cycle-timeline {
   width: 100%;
   height: auto;
+}
+
+#stuff-i-bought-this-month {
+  width: 97%;
+  height: auto;
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
 }

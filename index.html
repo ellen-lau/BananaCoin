@@ -509,6 +509,7 @@
       <br><br>
 
       <!-- START PAYING OFF YOUR CREDIT CARD -->
+
       <section id="paying-off-section">
         <div class='columns'>
           <div class='column anchor_div col-12'><a id="paying-off-section"></a></div>
@@ -624,6 +625,8 @@
 
               </div>
             </div>
+
+            <br><br><br><br><br>
           </div>
 
           <!--          
@@ -632,7 +635,203 @@
             <img src="images/credit-card-statement.png" id="credit-card-statement"/>
           </div>-->
 
+          <!-- START CHECK YOUR STATEMENT BALANCE -->
 
+          <div class="column col-12">
+            <h1>Check your statement balance!</h1>
+            <br><br>
+          </div>
+
+
+          <div class="column col-5 reportTransactionContainer">
+            <p>Use your list of stuff that you bought this month to cross check with the statement balance. Report any transactions that are suspicious!</p>
+
+            <img src="images/stuff-i-bought-this-month.png" id="stuff-i-bought-this-month"/>
+
+            <div class="errorsFoundDiv">
+              <div class='errorsFoundCaption'>
+                Numbers of Errors Found:
+              </div>
+
+              <div class='errorsFoundNum'>
+                0/4
+              </div>
+            </div>
+
+            <div class="reportTransactionInfoBox" id="report-1">
+              Report the transactions that look suspicoius!
+            </div>
+          </div>
+
+
+          <div class="column col-7">
+            <div class = 'ccStatementSquare'>
+              <div class = 'ccStatementSquareContent'>
+                <div class="ccStatementH">
+                  CREDIT CARD STATEMENT
+                </div>
+                <div class="ccStatementP">
+                  Account Number: 1111 - 2222 - 3333 - 4444
+                  <br><br>
+                  <div class='ccStatementInfoSquareRows'>
+                    <span class="term-tooltip"><span class="term-highlight">Billing Cycle</span>
+                    <span class="term-definition">
+                      <span class="term-definition-header">Billing Cycle</span> <br><br>
+                        The length of time between your last statement date, and your next statement date.
+                      </span>
+                    </span>
+                    <span class="ccStatementDate">
+                      :  &nbsp; November 15th, 2020 - December 14th, 2020
+                  </div>
+
+                  <div class='ccStatementInfoSquareRows'>
+                    </span>
+                    <span class="term-tooltip"><span class="term-highlight">Statement Balance</span>
+                    <span class="term-definition">
+                      <span class="term-definition-header">Statement Balance</span> <br><br>
+                        The total amount of money you owed at the end of your last billing period. What you are responsible for paying in full in order to not be charged interest.
+                      </span>
+                    </span>
+                    :   &nbsp; &nbsp; $ 1400
+                  </div>
+    
+                  <div class='ccStatementInfoSquareRows'>
+                    <span class="term-tooltip"><span class="term-highlight">Payment Deadline</span>
+                    <span class="term-definition">
+                      <span class="term-definition-header">Payment Deadline</span> <br><br>
+                      The last day to make a minimum or larger payment before your account is no longer in good standing. 
+                      <br><br>
+                      This is usually 15+ days after the end of a billing cycle, and the time in between is called the <b>grace period</b>, where no interest is incurred on your balance.
+                      </span>
+                    </span>
+                    :   &nbsp; &nbsp; January 4th, 2021
+                    <br><br>
+                </div>
+
+                  <div class="borderlineCCSquare"></div>
+
+                  <br>
+
+
+                  <div class="ccStatementH">
+                    Transactions
+                  </div>
+
+                  <div class='trasactionContent'>
+                    <div class="leftCC">
+                      Transaction title
+                    </div>
+
+                    <div class="leftCC">
+                      Amount
+                    </div>
+
+                    <div class="rightCC">
+                      Date
+                    </div>
+                  </div>
+
+                  <div class="borderlineCCSquare"></div>
+
+                  <div>
+                    <div class='ccTransaction'>
+                      <div class="leftCCTransactionsSquare">
+                        Banana Republic <br>
+                      </div>
+                      <div class="middleCCTransactionsSquare">
+                        $ 74.59 <br>
+                      </div>
+                      <div class="rightCCSquare">
+                        Dec 9
+                      </div>
+                      <div class="report" id="banana-republic-1" onclick="reportTransaction(id)">
+                        Report
+                      </div>
+                    </div>
+
+                    <div class='ccTransaction'>
+                      <div class="leftCCTransactionsSquare">
+                        Banana Republic <br>
+                      </div>
+                      <div class="middleCCTransactionsSquare">
+                        $ 74.59 <br>
+                      </div>
+                      <div class="rightCCSquare">
+                        Dec 9
+                      </div>
+                      <div class="report" id="banana-republic-2" onclick="reportTransaction(id)">
+                        Report
+                      </div>
+                    </div>
+
+                    <div class='ccTransaction'>
+                      <div class="leftCCTransactionsSquare">
+                        No Frills Grocery <br>
+                      </div>
+                      <div class="middleCCTransactionsSquare">
+                        $ 50 <br>
+                      </div>
+                      <div class="rightCCSquare">
+                        Dec 11
+                      </div>
+                      <div class="report" id="nofrills" onclick="reportTransaction(id)">
+                        Report
+                      </div>
+                    </div>
+
+                    <div class='ccTransaction'>
+                      <div class="leftCCTransactionsSquare">
+                        Netflix Co. <br>
+                      </div>
+                      <div class="middleCCTransactionsSquare">
+                        $ 16.99<br>
+                      </div>
+                      <div class="rightCCSquare">
+                        Dec 13
+                      </div>
+                      <div class="report" id="netflix" onclick="reportTransaction(id)">
+                        Report
+                      </div>
+                    </div>
+
+                    <div class='ccTransaction'>
+                      <div class="leftCCTransactionsSquare">
+                        eTransfer to Nigerian-Prince <br>
+                      </div>
+                      <div class="middleCCTransactionsSquare">
+                        $ 400<br>
+                      </div>
+                      <div class="rightCCSquare">
+                        Dec 14
+                      </div>
+                      <div class="report" id="nigerian-prince" onclick="reportTransaction(id)">
+                        Report
+                      </div>
+                    </div>
+
+
+                    <div class='ccTransaction'>
+                      <div class="leftCCTransactionsSquare">
+                        IKEA<br>
+                      </div>
+                      <div class="middleCCTransactionsSquare">
+                        $ 122<br>
+                      </div>  
+                      <div class="rightCCSquare">
+                        Dec 14
+                      </div>
+                      <div class="report" id="ikea" onclick="reportTransaction(id)">
+                        Report
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+            </div>
+          </div>
 
           
 
@@ -883,4 +1082,5 @@
 <script src='scripts/scrollActive.js'></script>
 <script src='scripts/progress.js'></script>
 <script src='scripts/billingCycle.js'></script>
+<script src='scripts/checkStatementBalance.js'></script>
 </html>
