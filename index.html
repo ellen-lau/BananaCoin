@@ -16,9 +16,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet"> 
 
 </head>
 
@@ -606,6 +608,105 @@
         <br><br>
         <br><br>
 
+        <!-- WHEN DO I PAY OFF MY CARD SECTION -->
+
+        <div class="columns">
+          <div class="column col-12">
+            <h1>When do I pay off my card?</h1>
+            <br><br>
+          </div>
+
+          <div class="column col-8">
+            <p>There are many different balances on your statement - when it comes to the payment deadline, which one are you supposed to pay? Experiment below to find out!</p>
+          </div>
+          <div class="column col-12">
+            <img src="images/billing-cycle-timeline.png" id="billing-cycle-timeline"/>
+            <br><br>
+            <br>
+          </div>
+
+          <div class="column col-4">
+            <p class="nunitoH">Your January Statement</p>
+          </div>
+
+          <div class="column col-3">
+            <p class="nunitoH">Make a Payment</p>
+          </div>
+
+          <div class="column col-4">
+          </div>
+
+          <div class="column col-4">
+            <div class="januaryStatementDiv">
+              
+              <div class="januaryStatement">
+                <div class="januaryStatementContents">
+                  <div class="balanceDiv">
+                    <div class="nunitoP">Current Statement Balance</div>
+                    <div class="amounts" id="billing-cycle-statement-balance">$45</div>
+                  </div>
+
+                  <div class="balanceDiv">
+                    <div class="nunitoP">Current Account Balance</div>
+                    <div class="amounts" id="billing-cycle-account-balance">$100</div>
+
+                  </div>
+
+                </div>
+                <div class="borderline"></div>
+
+                <div class="januaryStatementContents">
+
+                  <div class="balanceDiv">
+                    <div class="nunitoPBottom">Minimum Payment</div>
+                    <div class="amounts" id="billing-cycle-min-payment">$10</div>
+
+                  </div>
+                  
+
+                  <div class="balanceDivInterest">
+                    <div class="nunitoPBottom">Interest Owed</div>
+                    <div class="amounts" id="billing-cycle-interest-owed">$10</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="column col-3">
+            <div class="paymentButton" id="pay-account-balance" onclick="payBalance(id)">
+              <div class="nunitoPButton">Pay Account Balance</div>
+              <div class="amountsButton">$100</div>
+            </div >
+            <div  class="paymentButton" id="pay-statement-balance" onclick="payBalance(id)">
+              <div class="nunitoPButton">Pay Statement Balance</div>
+              <div class="amountsButton">$45</div>
+            </div >
+            <div  class="paymentButton" id="pay-min-balance" onclick="payBalance(id)">
+              <div class="nunitoPButton">Pay Minimum Balance</div>
+              <div class="amountsButton">$10</div>
+            </div >
+            <div  class="paymentButton" id="pay-no-payment" onclick="payBalance(id)">
+              <div class="nunitoPButton">No Payment</div>
+              <div class="amountsButton">$0</div>
+            </div>
+          </div>
+
+
+          <div class="column col-5">
+            <div class='billingCycleInfoBoxDiv'>
+              <div class="billingCycleInfoBox">
+                Your payment is due today! Let’s see what happens when you pay different amounts.
+              </div>
+          </div>
+          </div>
+
+          
+        </div>
+
+        <br><br><br>
+        <br><br><br>
 
         <!-- QUIZ 3 -->
 
@@ -684,4 +785,5 @@
 <script src='scripts/quickDefs.js'></script>
 <script src='scripts/scrollActive.js'></script>
 <script src='scripts/progress.js'></script>
+<script src='scripts/billingCycle.js'></script>
 </html>

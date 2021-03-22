@@ -410,6 +410,121 @@ a {
   text-align: center;
 }
 
+/* BILLING STATEMENT CSS */
+
+.nunitoH {
+  font-family: Nunito !important;
+  font-weight: bolder !important;
+  font-size: 800 !important;
+}
+
+.nunitoP {
+  display: inline-block;
+  max-width: 65%;
+  font-family: Nunito !important;
+  font-size: 14px !important;
+  font-weight: extra-light !important;
+  margin: auto;
+}
+
+.nunitoPBottom {
+  display: inline-block;
+  max-width: 65%;
+  font-family: Nunito !important;
+  font-size: 14px !important;
+  font-weight: extra-light !important;
+  padding-top: 0.3rem;
+}
+
+.nunitoPButton {
+  display: inline-block;
+  max-width: 65%;
+  font-family: Nunito !important;
+  font-size: 10px !important;
+  font-weight: extra-light !important;
+}
+
+.januaryStatementDiv{
+  font-family: Nunito !important;
+
+}
+
+.januaryStatement{
+  font-family: Nunito !important;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+}
+
+.januaryStatementContents {
+  margin: 1.1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.balanceDiv {
+  margin-bottom: 0.5rem;
+}
+
+.balanceDivInterest {
+  padding-top: 0.7rem;
+  
+}
+
+.amounts {
+  float: right;
+  font-weight:bold;
+  font-size: 25px !important;
+  margin: auto; 
+}
+
+.amountsButton {
+  display: relative;
+  font-family: Nunito;
+  font-weight: bold  !important;
+  font-size: 20px !important;
+  margin: auto; 
+  text-align: center;
+  padding-bottom: 0.25rem;
+}
+
+.paymentButton {
+  background-color: #EDEDED;
+  border-radius: 0.3rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.paymentButtonFocused {
+  background-color: #66C646;
+  border-radius: 0.3rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+
+}
+
+.borderline {
+  border: 0.5px solid black;
+}
+
+.billingCycleInfoBoxDiv {
+  height: 13.2rem;
+  position: relative;
+}
+
+.billingCycleInfoBox {
+  position: absolute;
+  top: 50%; left: 50%;
+  width:100%;
+  transform: translate(-50%,-50%);
+  border-radius: 0.4rem;
+  background-color: #66C646;
+  color: black;
+  font-family: Schoolbell;
+  border: 2px solid black;
+  padding: 1.5rem;
+  text-align: center;
+}
+
 /* IMAGE CSS */
 
 #img-jerry {
@@ -530,3 +645,7 @@ a {
   height: auto;
 }
 
+#billing-cycle-timeline {
+  width: 100%;
+  height: auto;
+}
