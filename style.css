@@ -543,7 +543,9 @@ a {
 }
 
 .ccStatement {
+  white-space : nowrap;
   background-image: url(images/cc-paper.png);
+  background-repeat: no-repeat;
   background-size: 115% auto;
   background-position: top -1rem right -2rem;; 
   width: 100%;
