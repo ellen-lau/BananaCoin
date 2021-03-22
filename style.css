@@ -276,9 +276,11 @@ a {
   background-color: white;
   color: black;
   margin: auto;
-  width: 12rem;
+  width: 14rem;
   height: auto;
   padding: 4rem 0;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 
   font-family: Roboto;
   font-weight: 400;
