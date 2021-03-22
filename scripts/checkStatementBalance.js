@@ -72,6 +72,16 @@ function reportTransaction(id) {
                 reportedBananaRepublic = true;
         }
 
-        
     }
+    else {
+        document.getElementsByClassName("nothingSuspiciousInfo")[0].classList.add("nothingSuspiciousInfoClicked");
+
+        window.setTimeout(hideInfo, 1200);
+
+        console.log( document.getElementsByClassName("nothingSuspiciousInfo"))
+    }
+}
+
+function hideInfo() {
+    document.getElementsByClassName("nothingSuspiciousInfo")[0].classList.remove("nothingSuspiciousInfoClicked")
 }

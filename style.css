@@ -677,7 +677,10 @@ a {
   padding-right: 0.2rem;
   border-radius: 0.2rem;
   cursor: pointer;
+}
 
+.ccTransaction:hover .nothingSuspiciousInfo{
+  display: none;
 }
 
 .errorsFoundDiv {
@@ -715,8 +718,29 @@ a {
 
 .ccStatementInfoSquareRows {
   margin-bottom: 0.2rem;
+  width: 100%;
 }
 
+.nothingSuspiciousInfo {
+  display: none;
+}
+
+.nothingSuspiciousInfoClicked {
+  position: absolute;
+  display: block;
+  background-color: #C4C4C4;
+  overflow: auto !important;
+  width: 9rem;
+  padding: 0.2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.2rem;
+  left: 9.7rem;
+}
+
+.ccTransactionsDiv {
+  position: relative;
+}
 /* IMAGE CSS */
 
 #img-jerry {
