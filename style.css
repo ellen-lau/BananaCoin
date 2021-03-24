@@ -193,6 +193,8 @@ a {
   padding: 0.1rem;
   padding-left: 0.4rem;
   padding-right: 0.4rem;
+
+  cursor: help;
 }
 
 /* HARDCODED: TERM DEFINITION WIDTH IS HARDCODED */
