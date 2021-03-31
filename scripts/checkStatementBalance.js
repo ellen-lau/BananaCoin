@@ -11,6 +11,9 @@ transactionInfo.set(transactionId[5], "Seems like IKEA didn’t charge you the r
 var firstReport = true;
 var numUniqueReports = 0;
 var reportedBananaRepublic = false;
+var reportedNetflix = false;
+var reportedIKEA = false;
+var reportedPrince = false;
 
 function reportTransaction(id) {
     if (id !== "nofrills") {
@@ -40,22 +43,67 @@ function reportTransaction(id) {
                         //do nothing
                     }
                 }
-                else {
-                    const div = document.createElement("div");
-                    div.classList.add("reportTransactionInfoBox");
+                else if (id === "netflix") {
+                    if (reportedNetflix === false) {
+                        const div = document.createElement("div");
+                        div.classList.add("reportTransactionInfoBox");
 
-                    const temp = numUniqueReports+1
-                    div.setAttribute("id", "report-"+temp);
-                    div.innerHTML = transactionInfo.get(id);
+                        const temp = numUniqueReports+1
+                        div.setAttribute("id", "report-"+temp);
+                        div.innerHTML = transactionInfo.get(id);
 
-                    const parent = document.getElementsByClassName("reportTransactionContainer");
-                    const latestReport = document.getElementById("report-"+numUniqueReports);
+                        const parent = document.getElementsByClassName("reportTransactionContainer");
+                        const latestReport = document.getElementById("report-"+numUniqueReports);
 
-                    parent[0].insertBefore(div, latestReport);
-                    
-                    numUniqueReports++;
+                        parent[0].insertBefore(div, latestReport);
+                        
+                        numUniqueReports++;
 
-                    document.getElementsByClassName("errorsFoundNum")[0].innerHTML = numUniqueReports+"/4";
+                        document.getElementsByClassName("errorsFoundNum")[0].innerHTML = numUniqueReports+"/4";
+                        reportedNetflix = true;
+                    }
+                }
+
+                else if (id === "nigerian-prince") {
+                    if (reportedPrince === false) {
+                        const div = document.createElement("div");
+                        div.classList.add("reportTransactionInfoBox");
+
+                        const temp = numUniqueReports+1
+                        div.setAttribute("id", "report-"+temp);
+                        div.innerHTML = transactionInfo.get(id);
+
+                        const parent = document.getElementsByClassName("reportTransactionContainer");
+                        const latestReport = document.getElementById("report-"+numUniqueReports);
+
+                        parent[0].insertBefore(div, latestReport);
+                        
+                        numUniqueReports++;
+
+                        document.getElementsByClassName("errorsFoundNum")[0].innerHTML = numUniqueReports+"/4";
+                        reportedPrince = true;
+                    }
+                }
+
+                else if (id === "ikea") {
+                    if (reportedIKEA === false) {
+                        const div = document.createElement("div");
+                        div.classList.add("reportTransactionInfoBox");
+
+                        const temp = numUniqueReports+1
+                        div.setAttribute("id", "report-"+temp);
+                        div.innerHTML = transactionInfo.get(id);
+
+                        const parent = document.getElementsByClassName("reportTransactionContainer");
+                        const latestReport = document.getElementById("report-"+numUniqueReports);
+
+                        parent[0].insertBefore(div, latestReport);
+                        
+                        numUniqueReports++;
+
+                        document.getElementsByClassName("errorsFoundNum")[0].innerHTML = numUniqueReports+"/4";
+                        reportedIKEA = true;
+                    }
                 }
             }
         }
@@ -70,6 +118,16 @@ function reportTransaction(id) {
 
             if (id === "banana-republic-1" || id === "banana-republic-2")
                 reportedBananaRepublic = true;
+
+            else if (id === "netflix")
+                reportedNetflix = true;
+
+            else if (id === "ikea")
+                reportedIKEA = true;
+
+            else if (id === "nigerian-prince")
+                reportedPrince = true;
+            
         }
 
     }
