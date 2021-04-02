@@ -292,11 +292,11 @@
 .carousel .carousel-locator:nth-of-type(6):checked ~ .carousel-nav .nav-item:nth-of-type(6),
 .carousel .carousel-locator:nth-of-type(7):checked ~ .carousel-nav .nav-item:nth-of-type(7),
 .carousel .carousel-locator:nth-of-type(8):checked ~ .carousel-nav .nav-item:nth-of-type(8) {
-  color: #f7f8f9;
+  color: #ffffff;
 }
 
 .carousel {
-  background: #f7f8f9;
+  background: #ffffff;
   display: block;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;

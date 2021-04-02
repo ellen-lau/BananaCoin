@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="normalize.css"/>
   <link rel="stylesheet" href="dist/spectre.css">
-  <link rel="stylesheet" href="dist/spectre-exp.min.css">
+  <link rel="stylesheet" href="dist/spectre-exp.css">
   <link rel="stylesheet" href="dist/spectre-icons.min.css">
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="carousel.css"/>
   <title>Banana Coin</title>
 
 
@@ -16,11 +17,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
 
 </head>
 
@@ -304,43 +305,54 @@
 
         <div class ="column col-12">
           <div class="carousel">
-            <!-- carousel locator -->
-            <input class="carousel-locator" id="slide-1" type="radio" name="carousel-radio" hidden="" checked="">
-            <input class="carousel-locator" id="slide-2" type="radio" name="carousel-radio" hidden="">
-            <input class="carousel-locator" id="slide-3" type="radio" name="carousel-radio" hidden="">
-            <input class="carousel-locator" id="slide-4" type="radio" name="carousel-radio" hidden="">
+              <input type="radio" name="slider" id="item-1" checked>
+              <input type="radio" name="slider" id="item-2">
+              <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+              <label class="ccard" for="item-1" id="card-1">
+                <img src="images/credit-card-single.png" class="cc-img" alt="card">
+              </label>
+              <label class="ccard" for="item-2" id="card-2">
+                <img src="images/credit-card-single.png" class="cc-img" alt="card">
+              </label>
+              <label class="ccard" for="item-3" id="card-3">
+                <img src="images/credit-card-single.png" class="cc-img" alt="card">
+              </label>
+            </div>
+          </div>
+        </div>
 
-            <!-- carousel container -->
-            <div class="carousel-container">
-              <!-- carousel item -->
-              <figure class="carousel-item">
-                <label class="item-prev btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-left"></i></label>
-                <label class="item-next btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-right"></i></label>
-                <img class="img-responsive rounded" src="img/osx-yosemite.jpg" alt="macOS Yosemite Wallpaper">
-              </figure>
-              <figure class="carousel-item">
-                <label class="item-prev btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-left"></i></label>
-                <label class="item-next btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-right"></i></label>
-                <img class="img-responsive rounded" src="img/osx-yosemite-2.jpg" alt="macOS Yosemite Wallpaper">
-              </figure>
-              <figure class="carousel-item">
-                <label class="item-prev btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-left"></i></label>
-                <label class="item-next btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-right"></i></label>
-                <img class="img-responsive rounded" src="img/osx-el-capitan.jpg" alt="macOS El Capitan Wallpaper">
-              </figure>
-              <figure class="carousel-item">
-                <label class="item-prev btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-left"></i></label>
-                <label class="item-next btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-right"></i></label>
-                <img class="img-responsive rounded" src="img/osx-el-capitan-2.jpg" alt="macOS El Capitan Wallpaper">
-              </figure>
-            </div>
-            <!-- carousel navigation -->
-            <div class="carousel-nav">
-              <label class="nav-item text-hide c-hand" for="slide-1">1</label>
-              <label class="nav-item text-hide c-hand" for="slide-2">2</label>
-              <label class="nav-item text-hide c-hand" for="slide-3">3</label>
-              <label class="nav-item text-hide c-hand" for="slide-4">4</label>
-            </div>
+        <div class="column col-12">
+
+          <div class="credit-card-textbox" id="cc1-textbox">
+            <h3> Student Credit Card </h3>
+            <p>Student credit cards are typically characterized by:</p>
+            <ul>
+              <li>low/no annual fees</li>
+              <li>built in insurance for purchase protection</li>
+            </ul>
+            <p> This is a card for: students to build an initial credit history </p>
+          </div>
+
+          <div class="credit-card-textbox" id="cc2-textbox">
+            <h3> Travel Rewards/Air Miles Credit Card </h3>
+            <p>Travel rewards cards provide benefits that can include:</p>
+            <ul>
+              <li>earning points on every purchase</li>
+              <li>point redemption on travel expenses like flights and hotels</li>
+              <li>travel insurance for luggage, medical, accident, hotel, and flight coverage</li>
+            </ul>
+            <p> This is a card for: people who will travel a lot. </p>
+          </div>
+
+          <div class="credit-card-textbox" id="cc3-textbox">
+            <h3> Dining/Retail Rewards Credit Card </h3>
+            <p>Dining/retail rewards cards provide benefits that can include:</p>
+            <ul>
+              <li>earning points on every purchase at select retail and dining stores</li>
+              <li>earning cashback on select purchases</li>
+            </ul>
+            <p>This is a card for: people who frequent select retail stores or restaurants.</p>
           </div>
         </div>
       </div>
@@ -630,7 +642,7 @@
                   <span class="term-tooltip"><span class="term-highlight term-highlight-cc-statement">Payment Deadline</span>
                   <span class="term-definition">
                     <span class="term-definition-header">Payment Deadline</span> <br><br>
-                    The last day to make a minimum or larger payment before your account is no longer in good standing. 
+                    The last day to make a minimum or larger payment before your account is no longer in good standing.
                     <br><br>
                     This is usually 15+ days after the end of a billing cycle, and the time in between is called the <b>grace period</b>, where no interest is incurred on your balance.
                     </span>
@@ -654,15 +666,15 @@
                     <br>
                     Banana Republic
                     <br>
-                    Apple (M1 Macbook) 
+                    Apple (M1 Macbook)
                   </div>
 
                   <div class='leftCCTransactions'>
-                    Date  
+                    Date
                     <br>
                     2020-11-19
                     <br>
-                    2021-12-11   
+                    2021-12-11
                   </div>
 
                   <div class='rightCC'>
@@ -679,9 +691,9 @@
             <br><br><br><br><br>
           </div>
 
-          <!--          
+          <!--
           <div class="column col-12">
-            
+
             <img src="images/credit-card-statement.png" id="credit-card-statement"/>
           </div>-->
 
@@ -744,12 +756,12 @@
                     </span>
                     :   &nbsp; &nbsp; $ 1400
                   </div>
-    
+
                   <div class='ccStatementInfoSquareRows'>
                     <span class="term-tooltip"><span class="term-highlight term-highlight-cc-statement">Payment Deadline</span>
                     <span class="term-definition">
                       <span class="term-definition-header">Payment Deadline</span> <br><br>
-                      The last day to make a minimum or larger payment before your account is no longer in good standing. 
+                      The last day to make a minimum or larger payment before your account is no longer in good standing.
                       <br><br>
                       This is usually 15+ days after the end of a billing cycle, and the time in between is called the <b>grace period</b>, where no interest is incurred on your balance.
                       </span>
@@ -871,7 +883,7 @@
                         </div>
                         <div class="middleCCTransactionsSquare">
                           $ 122<br>
-                        </div>  
+                        </div>
                         <div class="rightCCSquare">
                           Dec 14
                         </div>
@@ -889,7 +901,7 @@
             </div>
           </div>
 
-          
+
 
 
           <div class="column col-6">
@@ -990,7 +1002,7 @@
 
           <div class="column col-4">
             <div class="januaryStatementDiv">
-              
+
               <div class="januaryStatement">
                 <div class="januaryStatementContents">
                   <div class="balanceDiv">
@@ -1014,7 +1026,7 @@
                     <div class="amounts" id="billing-cycle-min-payment">$10</div>
 
                   </div>
-                  
+
 
                   <div class="balanceDivInterest">
                     <div class="nunitoPBottom">Interest Owed</div>
@@ -1054,7 +1066,7 @@
           </div>
           </div>
 
-          
+
         </div>
 
         <br><br><br>
